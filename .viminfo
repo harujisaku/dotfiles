@@ -1,0 +1,376 @@
+# この viminfo ファイルは Vim 8.0 によって生成されました.
+# 変更する際には十分注意してください!
+
+# Viminfo version
+|1,4
+
+# このファイルが書かれた時の 'encoding' の値
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 最後の 検索パターン:
+~MSle0~/globalkeys
+
+# コマンドライン 項目の履歴 (新しいものから古いものへ):
+:wq
+|2,0,1592878193,,"wq"
+:q
+|2,0,1592827377,,"q"
+:w
+|2,0,1592738645,,"w"
+
+# 検索文字列 項目の履歴 (新しいものから古いものへ):
+?/globalkeys
+|2,1,1592826940,47,"globalkeys"
+?/grobalkeys
+|2,1,1592826930,47,"grobalkeys"
+? \<Defaults\>
+|2,1,1592824178,,"\\<Defaults\\>"
+
+# 式 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# デバッグ行 項目の履歴 (新しいものから古いものへ):
+
+# レジスタ:
+"1	LINE	0
+	awful.util.spawn_with_shell("gnome-contlor-senter")
+|3,0,1,1,1,0,1592863814,"awful.util.spawn_with_shell(\"gnome-contlor-senter\")"
+"2	LINE	0
+	awful.util.spawn_with_shell("xscreensaver -no-splash")
+|3,0,2,1,1,0,1592863812,"awful.util.spawn_with_shell(\"xscreensaver -no-splash\")"
+"3	LINE	0
+	awful.key({ }, "Print", function () awful.util.spawn("scrot -e 'mv $f ~/screenshots/ 2>/dev/null'", false) end),
+|3,0,3,1,1,0,1592827227,"awful.key({ }, \"Print\", function () awful.util.spawn(\"scrot -e 'mv $f ~/screenshots/ 2>/dev/null'\", false) end),"
+"4	LINE	0
+	local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
+	...
+	        s.mytasklist, -- Middle widget
+	        { -- Right widgets
+	           ...
+	            volume_widget({display_notification = true}),
+	           ...
+|3,0,4,1,7,0,1592800495,"local volume_widget = require(\"awesome-wm-widgets.volume-widget.volume\")","...","        s.mytasklist, -- Middle widget","        { -- Right widgets","           ...","            volume_widget({display_notification = true}),","           ..."
+"5	LINE	0
+	
+	local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
+	s.mytasklist, -- Middle widget
+	    { -- Right widgets
+	        layout = wibox.layout.fixed.horizontal,
+	        ...
+	        --[[default]]
+	        volumebar_widget(),
+	        --[[or customized]]
+	        volumebar_widget({
+	            main_color = '#af13f7',
+	            mute_color = '#ff0000',
+	            width = 80,
+	            shape = 'rounded_bar', -- octogon, hexagon, powerline, etc
+	            -- bar's height = wibar's height minus 2x margins
+	            margins = 8
+	        }),
+	
+	        ...
+|3,0,5,1,19,0,1592799905,"","local volumebar_widget = require(\"awesome-wm-widgets.volumebar-widget.volumebar\")","s.mytasklist, -- Middle widget","    { -- Right widgets","        layout = wibox.layout.fixed.horizontal,","        ...","        --[[default]]","        volumebar_widget(),","        --[[or customized]]","        volumebar_widget({","            main_color = '#af13f7',","            mute_color = '#ff0000',","            width = 80,",>72
+|<"            shape = 'rounded_bar', -- octogon, hexagon, powerline, etc","            -- bar's height = wibar's height minus 2x margins","            margins = 8","        }),","","        ..."
+"6	LINE	0
+	local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
+|3,0,6,1,1,0,1592799330,"local volumebar_widget = require(\"awesome-wm-widgets.volumebar-widget.volumebar\")"
+"7	LINE	0
+	local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
+|3,0,7,1,1,0,1592799316,"local volumebar_widget = require(\"awesome-wm-widgets.volumebar-widget.volumebar\")"
+"8	CHAR	0
+	#
+	# "$@
+|3,0,8,0,2,0,1592744777,"#","# \"$@"
+"9	CHAR	0
+	#
+	# "$@
+|3,0,9,0,2,0,1592744777,"#","# \"$@"
+""-	CHAR	0
+	b
+|3,1,36,0,1,0,1592878139,"b"
+
+# ファイルマーク:
+'0  51  35  /etc/xdg/awesome/rc.lua
+|4,48,51,35,1592878194,"/etc/xdg/awesome/rc.lua"
+'1  51  45  /etc/xdg/awesome/rc.lua
+|4,49,51,45,1592878033,"/etc/xdg/awesome/rc.lua"
+'2  584  0  /etc/xdg/awesome/rc.lua
+|4,50,584,0,1592863817,"/etc/xdg/awesome/rc.lua"
+'3  584  0  /etc/xdg/awesome/rc.lua
+|4,51,584,0,1592863817,"/etc/xdg/awesome/rc.lua"
+'4  584  0  /etc/xdg/awesome/rc.lua
+|4,52,584,0,1592863817,"/etc/xdg/awesome/rc.lua"
+'5  584  0  /etc/xdg/awesome/rc.lua
+|4,53,584,0,1592863817,"/etc/xdg/awesome/rc.lua"
+'6  296  0  /etc/xdg/awesome/rc.lua
+|4,54,296,0,1592828308,"/etc/xdg/awesome/rc.lua"
+'7  296  0  /etc/xdg/awesome/rc.lua
+|4,55,296,0,1592828308,"/etc/xdg/awesome/rc.lua"
+'8  296  0  /etc/xdg/awesome/rc.lua
+|4,56,296,0,1592828308,"/etc/xdg/awesome/rc.lua"
+'9  296  0  /etc/xdg/awesome/rc.lua
+|4,57,296,0,1592828308,"/etc/xdg/awesome/rc.lua"
+
+# ジャンプリスト (新しいものが先):
+-'  51  35  /etc/xdg/awesome/rc.lua
+|4,39,51,35,1592878194,"/etc/xdg/awesome/rc.lua"
+-'  1  0  /etc/xdg/awesome/rc.lua
+|4,39,1,0,1592878127,"/etc/xdg/awesome/rc.lua"
+-'  51  45  /etc/xdg/awesome/rc.lua
+|4,39,51,45,1592878033,"/etc/xdg/awesome/rc.lua"
+-'  1  0  /etc/xdg/awesome/rc.lua
+|4,39,1,0,1592877980,"/etc/xdg/awesome/rc.lua"
+-'  584  0  /etc/xdg/awesome/rc.lua
+|4,39,584,0,1592863817,"/etc/xdg/awesome/rc.lua"
+-'  584  0  /etc/xdg/awesome/rc.lua
+|4,39,584,0,1592863817,"/etc/xdg/awesome/rc.lua"
+-'  584  0  /etc/xdg/awesome/rc.lua
+|4,39,584,0,1592863817,"/etc/xdg/awesome/rc.lua"
+-'  33  0  /etc/xdg/awesome/rc.lua
+|4,39,33,0,1592863802,"/etc/xdg/awesome/rc.lua"
+-'  33  0  /etc/xdg/awesome/rc.lua
+|4,39,33,0,1592863802,"/etc/xdg/awesome/rc.lua"
+-'  33  0  /etc/xdg/awesome/rc.lua
+|4,39,33,0,1592863802,"/etc/xdg/awesome/rc.lua"
+-'  1  0  /etc/xdg/awesome/rc.lua
+|4,39,1,0,1592863791,"/etc/xdg/awesome/rc.lua"
+-'  296  0  /etc/xdg/awesome/rc.lua
+|4,39,296,0,1592828308,"/etc/xdg/awesome/rc.lua"
+-'  296  0  /etc/xdg/awesome/rc.lua
+|4,39,296,0,1592828308,"/etc/xdg/awesome/rc.lua"
+-'  296  0  /etc/xdg/awesome/rc.lua
+|4,39,296,0,1592828308,"/etc/xdg/awesome/rc.lua"
+-'  296  0  /etc/xdg/awesome/rc.lua
+|4,39,296,0,1592828308,"/etc/xdg/awesome/rc.lua"
+-'  1  0  /etc/xdg/awesome/rc.lua
+|4,39,1,0,1592827759,"/etc/xdg/awesome/rc.lua"
+-'  1  0  /etc/xdg/awesome/rc.lua
+|4,39,1,0,1592827377,"/etc/xdg/awesome/rc.lua"
+-'  449  0  /etc/xdg/awesome/rc.lua
+|4,39,449,0,1592827290,"/etc/xdg/awesome/rc.lua"
+-'  449  0  /etc/xdg/awesome/rc.lua
+|4,39,449,0,1592827290,"/etc/xdg/awesome/rc.lua"
+-'  449  0  /etc/xdg/awesome/rc.lua
+|4,39,449,0,1592827290,"/etc/xdg/awesome/rc.lua"
+-'  449  0  /etc/xdg/awesome/rc.lua
+|4,39,449,0,1592827290,"/etc/xdg/awesome/rc.lua"
+-'  449  0  /etc/xdg/awesome/rc.lua
+|4,39,449,0,1592827290,"/etc/xdg/awesome/rc.lua"
+-'  449  0  /etc/xdg/awesome/rc.lua
+|4,39,449,0,1592827290,"/etc/xdg/awesome/rc.lua"
+-'  1  0  /etc/xdg/awesome/rc.lua
+|4,39,1,0,1592827109,"/etc/xdg/awesome/rc.lua"
+-'  398  111  /etc/xdg/awesome/rc.lua
+|4,39,398,111,1592827006,"/etc/xdg/awesome/rc.lua"
+-'  398  111  /etc/xdg/awesome/rc.lua
+|4,39,398,111,1592827006,"/etc/xdg/awesome/rc.lua"
+-'  398  111  /etc/xdg/awesome/rc.lua
+|4,39,398,111,1592827006,"/etc/xdg/awesome/rc.lua"
+-'  398  111  /etc/xdg/awesome/rc.lua
+|4,39,398,111,1592827006,"/etc/xdg/awesome/rc.lua"
+-'  398  111  /etc/xdg/awesome/rc.lua
+|4,39,398,111,1592827006,"/etc/xdg/awesome/rc.lua"
+-'  398  111  /etc/xdg/awesome/rc.lua
+|4,39,398,111,1592827006,"/etc/xdg/awesome/rc.lua"
+-'  398  111  /etc/xdg/awesome/rc.lua
+|4,39,398,111,1592827006,"/etc/xdg/awesome/rc.lua"
+-'  51  0  /etc/xdg/awesome/rc.lua
+|4,39,51,0,1592826940,"/etc/xdg/awesome/rc.lua"
+-'  51  0  /etc/xdg/awesome/rc.lua
+|4,39,51,0,1592826940,"/etc/xdg/awesome/rc.lua"
+-'  51  0  /etc/xdg/awesome/rc.lua
+|4,39,51,0,1592826940,"/etc/xdg/awesome/rc.lua"
+-'  51  0  /etc/xdg/awesome/rc.lua
+|4,39,51,0,1592826940,"/etc/xdg/awesome/rc.lua"
+-'  51  0  /etc/xdg/awesome/rc.lua
+|4,39,51,0,1592826940,"/etc/xdg/awesome/rc.lua"
+-'  1  0  /etc/xdg/awesome/rc.lua
+|4,39,1,0,1592826897,"/etc/xdg/awesome/rc.lua"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+-'  12  25  /etc/sudoers.tmp
+|4,39,12,25,1592824196,"/etc/sudoers.tmp"
+
+# ファイル内マークの履歴 (新しいものから古いもの):
+
+> /etc/xdg/awesome/rc.lua
+	*	1592878193	0
+	"	51	35
+	^	51	36
+	.	51	35
+	+	51	25
+	+	64	3
+	+	205	34
+	+	130	0
+	+	582	0
+	+	582	30
+	+	582	72
+	+	582	40
+	+	584	38
+	+	583	49
+	+	584	36
+	+	398	100
+	+	398	0
+	+	448	0
+	+	449	0
+	+	584	0
+	+	51	35
+
+> /etc/sudoers.tmp
+	*	1592824195	0
+	"	12	25
+	^	12	26
+	.	12	25
+	+	11	0
+	+	12	25
+
+> ~/.tmux.conf
+	*	1592744793	0
+	"	336	31
+	^	336	32
+	.	336	31
+	+	1	5
+	+	1	80
+	+	336	31
+
+> ~/.profile
+	*	1592744159	0
+	"	1	0
+	^	29	29
+	.	29	28
+	+	28	62
+	+	29	28
+
+> ~/.xinitrc
+	*	1592738194	0
+	"	19	11
+	^	19	12
+	.	19	11
+	+	19	11
