@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #各ソフトがインストールされていなければインストール
 if !(type "vim" > /dev/null 2>&1); then
 	sudo apt install vim -y
@@ -38,11 +38,20 @@ if !(type "jq" > /dev/null 2>&1); then
     sudo apt install jq -y
 fi
 #各ドットファイルをシンボリックリンクで結ぶ
-ln -sf ~/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/dotfiles/.profile ~/.profile
-ln -sf ~/dotfiles/.tmux_local.conf ~/.tmux_local.conf
-ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/.vim/ ~/.vim
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.viminfo ~/.viminfo
-ln -sf ~/dotfiles/.tmux ~/.tmux
+#ln -sf ~/dotfiles/.bashrc ~/.bashrc
+#ln -sf ~/dotfiles/.profile ~/.profile
+#ln -sf ~/dotfiles/.tmux_local.conf ~/.tmux_local.conf
+#ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+#ln -sf ~/dotfiles/.vim/ ~/.vim
+#ln -sf ~/dotfiles/.vimrc ~/.vimrc
+#ln -sf ~/dotfiles/.viminfo ~/.viminfo
+#ln -sf ~/dotfiles/.tmux ~/.tmux
+cd ~/dotfiles
+for f in .??*
+do
+      # 無視したいファイルやディレクトリはこんな風に追加してね
+    [[ ${f} = ".git" ]] && continue
+    [[ ${f} = ".gitignore" ]] && continue
+    ln -snfv ~/dotfiles/${f} ${HOME}/${f}
+    done
+ echo $(tput setaf 2)Deploy dotfiles complete!. ✔︎$(tput sgr0)
