@@ -1,2 +1,7 @@
 #! /bin/bash
-cat /proc/loadavg | cut -d ' ' -f 1
+    VMSTAT=` vmstat 1 2 2> /dev/null | tail -1`
+    US=`echo ${VMSTAT} | awk '{print $13}'`
+    SY=`echo ${VMSTAT} | awk '{print $14}'`
+    TOTAR=`expr $US + $SY `
+    VAL=`echo ${TOTAR}`
+echo $VAL
