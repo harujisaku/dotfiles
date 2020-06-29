@@ -28,3 +28,4 @@ fi
 xinput --set-prop "ETPS/2 Elantech Touchpad" "Device Enabled" 0
 setxkbmap -option ctrl:nocaps
 export EDITOR=vim
+exec zsh

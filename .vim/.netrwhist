@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/haru/ドキュメント'
-let g:netrw_dirhist_2='/home/haru/ドキュメント/PasS'
-let g:netrw_dirhist_3='/home/haru/ドキュメント/PasS/processing'
-let g:netrw_dirhist_4='/home/haru/ドキュメント/PasS/processing/beta0_1__'
-let g:netrw_dirhist_5='/home/haru/ドキュメント/PasS/processing/beta0_1__/beta0_1_5'

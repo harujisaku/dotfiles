@@ -117,4 +117,5 @@ if ! shopt -oq posix; then
 fi
 PATH=$PATH:~/.local/bin
 PATH=$PATH:/home/haru/.tmux/bin
+PATH=$PATH:/home/haru/app
 

@@ -22,6 +22,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('t9md/vim-textmanip')
     call dein#add('osyo-manga/vim-watchdogs')
     call dein#add('Shougo/neosnippet-snippets')
+    call dein#add('ConradIrwin/vim-bracketed-paste')
   endif
 
   call dein#end()
@@ -55,15 +56,16 @@ let g:neocomplete#sources#dictionary#dictionaries = {
 "efine keyword.
 if !exists('g:neocomplete#keyword_patterns')
     let g:neocomplete#keyword_patterns = {}
-                         endif
-                         let g:neocomplete#keyword_patterns['default'] ='\h\w*'
-                         " Plugin key-mappings.
-                         inoremap <expr> <C-g> neocomplete#undo_completion()
-                         inoremap <expr> <C-l> neocomplete#complete_common_string()
-                         " Recommended key-mappings.
-                         " <CR>: close popup and save indent.
-                         inoremap <silent> <CR> <C-r> = <SID>my_cr_function()<CR>
-                         function! s:my_cr_function()
+
+endif
+let g:neocomplete#keyword_patterns['default'] ='\h\w*'
+" Plugin key-mappings.
+inoremap <expr><C-g> neocomplete#undo_completion()
+inoremap <expr><C-l> neocomplete#complete_common_string()
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
                            return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
   " For no inserting <CR> key.
   "return pumvisible() ? "\<C-y>" : "\<CR>"
@@ -166,6 +168,8 @@ set expandtab
 set autoindent
 set showcmd
 set ruler
+set formatoptions-=ro
+set clipboard=unnamed,autoselect
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-h> <Left>
@@ -177,3 +181,4 @@ set tabstop=4
 set shiftwidth=4
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
